@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "mTlsTest": {
+      "commandName": "Project",
+      //"commandLineArgs": "--url https://qat-wd.leo.state.mi.us/api"
+      "commandLineArgs": "--url https://qat-wd.leo.state.mi.us/api --cert C:\\dev\\WdApi\\src\\qat-wd.leo.state.mi.us_client-cert_1.cer"
+    }
+  }
+}
