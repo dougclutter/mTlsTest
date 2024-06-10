@@ -25,17 +25,17 @@ Options:
 ## Example Usage
 This will send an HTTP GET request to https://company.com/api without any client certificate:  
 ```
-**mTlsTest -u https://company.com/api**
+mTlsTest -u https://company.com/api
 ```
 ---
-This will load the certificate file **c:\cert.pfx** and send an HTTP GET request to https://company.com/api.
+This will load the certificate file c:\cert.pfx and send an HTTP GET request to https://company.com/api.
 If the site requests a client certificate, the loaded certificate will be sent:
 ```
-**mTlsTest -u https://company.com/api -c c:\cert.pfx**
+mTlsTest -u https://company.com/api -c c:\cert.pfx
 ```
 ---
-This will load the certificate file **c:\cert.pfx** using the password **mySecretPassword** and send an HTTP GET request to https://company.com/api.
+This will load the certificate file c:\cert.pfx using the password mySecretPassword and send an HTTP GET request to https://company.com/api.
 If the site requests a client certificate, the loaded certificate will be sent:
 ```
-**mTlsTest -u https://company.com/api -c c:\cert.pfx** -p mySecretPassword
+mTlsTest -u https://company.com/api -c c:\cert.pfx -p mySecretPassword
 ```
