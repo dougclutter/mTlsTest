@@ -10,6 +10,7 @@ When connecting to an mTLS web server, you must provide a client certificate.
 1. This will create the **mTlsTest.exe** file in the **bin\Release\net8.0\win-x64\publish** folder.  You can run it from that folder or move it wherever you like.
 
 ## Command-line Options
+```
 Usage:
   mTlsTest [options]
 
@@ -19,18 +20,22 @@ Options:
   -p, --password <password>        The password of the client certificate file.
   --version                        Show version information
   -?, -h, --help                   Show help and usage information
+```
 
 ## Example Usage
+This will send an HTTP GET request to https://company.com/api without any client certificate:  
+```
 **mTlsTest -u https://company.com/api**
-
-This will send an HTTP GET request to https://company.com/api without any client certificate.
-
-**mTlsTest -u https://company.com/api -c c:\cert.pfx**
-
+```
+---
 This will load the certificate file **c:\cert.pfx** and send an HTTP GET request to https://company.com/api.
-If the site requests a client certificate, the loaded certificate will be sent.
-
-**mTlsTest -u https://company.com/api -c c:\cert.pfx** -p mySecretPassword
-
+If the site requests a client certificate, the loaded certificate will be sent:
+```
+**mTlsTest -u https://company.com/api -c c:\cert.pfx**
+```
+---
 This will load the certificate file **c:\cert.pfx** using the password **mySecretPassword** and send an HTTP GET request to https://company.com/api.
-If the site requests a client certificate, the loaded certificate will be sent.
+If the site requests a client certificate, the loaded certificate will be sent:
+```
+**mTlsTest -u https://company.com/api -c c:\cert.pfx** -p mySecretPassword
+```
