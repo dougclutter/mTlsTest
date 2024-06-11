@@ -3,20 +3,21 @@ This is a simple, command-line utility (e.g. - a console app) to test connectivi
 When connecting to an mTLS web server, you must provide a client certificate.
 **mTlsTest** allows you to quickly check connecting to an mTLS web server both with and without a client certificate.
 
-## Getting Started
-### Download from github
-The easiest way to use this utility is to download `mTlsTest.exe` from [Releases](https://github.com/dougclutter/mTlsTest/releases).
-See the next section for instructions on building `mTlsTest.exe` from the source code.
-
+## Source Code
 Here's a summary of the key source files:
 - **Program.cs** (27 lines) - uses the System.CommandLine package to create a simple command line parser with built-in help.
 - **GetUrlHandler.cs** (68 lines) - configure an `HttpClient` to perform an HTTP GET with a client certificate.
 
+## Getting Started
+### Download from github
+You can download `mTlsTest.exe` from the [Releases](https://github.com/dougclutter/mTlsTest/releases) page.
+
 ### Building the EXE
 1. Download the source code to your local drive.
 1. Ensure you have the DotNet SDK v8.0.301 or later installed; it can be downloaded from https://dotnet.microsoft.com/en-us/download/dotnet/8.0.
-1. In the mTlsTest folder which contains the mTlsTest.csproj file, enter the following command: **dotnet publish -c Release -r win-x64 --sc**
-1. This will create the **mTlsTest.exe** file in the **bin\Release\net8.0\win-x64\publish** folder.  You can run it from that folder or move it wherever you like.
+1. Open a CMD window and change to the mTlsTest directory.  (e.g. - `CD /D C:\downloads\mTlsTest\mTlsTest`)
+1. Run the following command: `dotnet publish -c Release -r win-x64 --sc`
+1. This will create the `mTlsTest.exe` file in the **bin\Release\net8.0\win-x64\publish** folder.  You can run it from that folder or move it wherever you like.
 
 ## Command-line Options
 ```
