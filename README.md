@@ -4,6 +4,15 @@ When connecting to an mTLS web server, you must provide a client certificate.
 **mTlsTest** allows you to quickly check connecting to an mTLS web server both with and without a client certificate.
 
 ## Getting Started
+### Download from github
+The easiest way to use this utility is to just download it and use it.
+If you're uncomfortable with that, and you always should be, you can review the source code and build it yourself using the instructions below.
+
+Here's a summary of the key source files:
+- **Program.cs** (27 lines) - uses the System.CommandLine package to create a simple command line parser with built-in help.
+- **GetUrlHandler.cs** (68 lines) - configure an `HttpClient` to perform an HTTP GET with a client certificate.
+
+### Building the EXE
 1. Download the source code to your local drive.
 1. Ensure you have the DotNet SDK v8.0.301 or later installed; it can be downloaded from https://dotnet.microsoft.com/en-us/download/dotnet/8.0.
 1. In the mTlsTest folder which contains the mTlsTest.csproj file, enter the following command: **dotnet publish -c Release -r win-x64 --sc**
