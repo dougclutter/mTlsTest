@@ -5,8 +5,8 @@ When connecting to an mTLS web server, you must provide a client certificate.
 
 ## Getting Started
 ### Download from github
-The easiest way to use this utility is to just download it and use it.
-If you're uncomfortable with that, and you always should be, you can review the source code and build it yourself using the instructions below.
+The easiest way to use this utility is to download `mTlsTest.exe` from [Releases](https://github.com/dougclutter/mTlsTest/releases).
+See the next section for instructions on building `mTlsTest.exe` from the source code.
 
 Here's a summary of the key source files:
 - **Program.cs** (27 lines) - uses the System.CommandLine package to create a simple command line parser with built-in help.
